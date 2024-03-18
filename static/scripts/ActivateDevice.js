@@ -40,10 +40,6 @@ This step registers a URL at which an account receives asynchronous responses an
       stepCallback: async (stepState) => {
         const step3State = stepState?.["Step 1"];
         const accountName = step3State?.data?.accountName;
-        const callbackURL =
-          "https://mock-staging.thingspace.verizon.com/display?accountName=" +
-          accountName;
-        window.open(callbackURL, "_blank");
         await portal.setConfig((defaultConfig) => {
           console.log(defaultConfig);
           return {
