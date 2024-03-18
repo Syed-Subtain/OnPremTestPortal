@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "verizon nhg";
+  font-weight: 400;
+  src: url(fonts/VerizonNHGTX-Regular.otf);
+  src: url(fonts/VerizonNHGTX-Regular.ttf);
+}
+@font-face {
+  font-family: "verizon nhg";
+  font-weight: 400;
+  font-style: italic;
+  src: url(fonts/VerizonNHGTX-Italic.otf);
+  src: url(fonts/VerizonNHGTX-Italic.ttf);
+}
+@font-face {
+  font-family: "verizon nhg";
+  font-weight: 500;
+  src: url(fonts/VerizonNHGTX-Bold.otf);
+  src: url(fonts/VerizonNHGTX-Bold.ttf);
+}
+@font-face {
+  font-family: "verizon nhg";
+  font-weight: 500;
+  font-style: italic;
+  src: url(fonts/VerizonNHGTX-BoldItalic.otf);
+  src: url(fonts/VerizonNHGTX-BoldItalic.ttf);
+}

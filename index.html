@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="shortcut icon" href="static/images/favicon.ico">
+    <title>Verizon 5G Edge API Portal</title>
+    <link href="static/css/portal.css" rel="stylesheet" />
+    <style>
+        .branding-container .navigation .center .version-select select {
+            background-image: url('static/images/docs/selectArrowDown.svg');
+        }
+        .branding-container .logo p {
+            margin-left: 15px;
+            border-left: 1px solid #d9dee5;
+            padding-left: 15px;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <div>
+        <div class="portal-header">
+            <div class="branding-container">
+                <div class="logo">
+                    <a href="https://www.verizon.com/business/5g-edge-portal/index.html">
+                        <img src="static/images/logo.png"  />
+                    </a>
+                    <p>Verizon 5G Edge API Portal</p>
+                </div>
+            </div>
+        </div>
+        <div class="hosted-api-docs">
+            <div id="apimatic-widget" style="height: 100%; width: 100%;"></div>
+        </div>
+    </div>
+    <script defer src="https://dev-dxjs.netlify.app/static/js/portal.v7-uber.js"></script>
+    <script type="text/javascript">
+        window.addEventListener('DOMContentLoaded', function(event) {
+            APIMaticDevPortal.show(
+                {"container":"apimatic-widget","portalStyle":"default","apiKey":"xxx","baseUrl":"./","enableExport":true,"enableAnalytics":true,"enableConsoleCalls":true,"useProxyForConsoleCalls":false,"languageSettings":{"http_curl_v1":{"sdkDownloadLink":"","disableSdkDownload":false,"alpha":false,"beta":false},"java_eclipse_jre_lib":{"sdkDownloadLink":"","disableSdkDownload":false,"alpha":false,"beta":false},"cs_net_standard_lib":{"sdkDownloadLink":"","disableSdkDownload":false,"alpha":false,"beta":false},"ts_generic_lib":{"sdkDownloadLink":"","disableSdkDownload":false,"alpha":false,"beta":false},"php_generic_lib_v2":{"sdkDownloadLink":"","disableSdkDownload":false,"alpha":false,"beta":false},"python_generic_lib":{"sdkDownloadLink":"","disableSdkDownload":false,"alpha":false,"beta":false},"ruby_generic_lib":{"sdkDownloadLink":"","disableSdkDownload":false,"alpha":false,"beta":false}},"initialPlatform":"http_curl_v1","themeOverrides":{"palette":{"primaryColor":"#000000","secondaryColor":"#FFFFFF","linkColor":"#0077B4","colors":{"C000":"#FFFFFF","C100":"#F9FAFE","C200":"#F6F6F6","C300":"#E7E9F2","C400":"#D8DADA","C500":"#B0B5C9","C600":"#6F7171","C700":"#606E8A","C800":"#333333","C900":"#1B1D1F","C1000":"#000000"}},"fontSource":["static/font-files/Verizon-Font.css","https://fonts.googleapis.com/css?family=Courier+Prime:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"],"cssStyles":{"headings":{"fontFamily":"'verizon nhg'","h1":{"fontFamily":"'verizon nhg'","fontSize":"22.5px","fontWeight":"500","fontStyle":"normal","lineHeight":"1.2"},"h2":{"fontFamily":"'verizon nhg'","fontSize":"21px","fontWeight":"500","fontStyle":"normal","lineHeight":"1.2"},"h3":{"fontFamily":"'verizon nhg'","fontSize":"19.5px","fontWeight":"500","fontStyle":"normal","lineHeight":"1.2"},"h4":{"fontFamily":"'verizon nhg'","fontSize":"18px","fontWeight":"500","fontStyle":"normal","lineHeight":"1.2"},"h5":{"fontFamily":"'verizon nhg'","fontSize":"16.5px","fontWeight":"500","fontStyle":"normal","lineHeight":"1.2"},"h6":{"fontFamily":"'verizon nhg'","fontSize":"15px","fontWeight":"500","fontStyle":"normal","lineHeight":"1.2"}},"body":{"fontFamily":"'verizon nhg'","text1":{"fontFamily":"'verizon nhg'","fontSize":"15px","fontWeight":"400","fontStyle":"normal","lineHeight":"1.75"},"text2":{"fontFamily":"'verizon nhg'","fontSize":"13.33px","fontWeight":"400","fontStyle":"normal","lineHeight":"1.75"},"text3":{"fontFamily":"'verizon nhg'","fontSize":"11.85px","fontWeight":"400","fontStyle":"normal","lineHeight":"1.75"}},"code":{"fontFamily":"Courier Prime, monospace","inlineCode":{"fontFamily":"Courier Prime, monospace","fontSize":"15px","fontWeight":"400","fontStyle":"normal","lineHeight":"1.75"},"blockCode":{"fontFamily":"Courier Prime, monospace","fontSize":"15px","fontWeight":"400","fontStyle":"normal","lineHeight":"1.75"}}}},"codegenApiRoutes":{"docsgen":"/static/docs/verizon-{template}.json","codegen":"/static/sdks/verizon-{template}.zip","transform":"/static/exports/verizon-{format}.{ext}"},"renameHttpToRest":false}
+            );
+        });
+    </script>
+    <link defer href='./static/added-css/Cards-Stylesheet.css' rel='stylesheet'/><script defer src='./static/scripts/GetTokens.js'></script><script defer src='./static/scripts/ActivateDevice.js'></script><script defer src='./static/scripts/GetDeviceLocation.js'></script><script defer src='./static/scripts/GetDeviceUsage.js'></script><script defer src='./static/scripts/GetRegions.js'></script><script defer src='./static/scripts/FetchDevicesInformation.js'></script><script defer src='./static/scripts/ListDevicesUsageHistory.js'></script><script defer src='./static/scripts/day0/4G5GAddressValidation.js'></script><script defer src='./static/scripts/day0/ActivateServiceForDevice.js'></script><script defer src='./static/scripts/day0/RegisterDiagnosticServiceCallbackService.js'></script><script defer src='./static/scripts/day0/SIMSecureAssignment.js'></script><script defer src='./static/scripts/day1/GetRFStrengthBaseline.js'></script><script defer src='./static/scripts/day1/NetworkConditions.js'></script><script defer src='./static/scripts/day1/RegisterForOutages.js'></script><script defer src='./static/scripts/day1/SiteProximity.js'></script><script defer src='./static/scripts/dayN/FotaUpgrade.js'></script><script defer src='./static/scripts/dayN/GetExperienceScore.js'></script><script defer src='./static/scripts/dayN/VerifyNetworkLocation.js'></script><script>document.addEventListener('DOMContentLoaded', (event) => {APIMaticDevPortal.ready(({ registerWorkflow }) => {registerWorkflow('page:guided-walkthroughs/fetchDeviceList-walkthrough','How to Fetch Device Information',FetchDevicesInformation);registerWorkflow('page:guided-walkthroughs/getRegions-walkthrough','How to Fetch Regions',GetRegions);registerWorkflow('page:guided-walkthroughs/deviceUsageHistory-walkthrough','How to Fetch Device Usage History',ListDeviceUsageHistory);registerWorkflow('page:guided-walkthroughs/activateDevice-walkthrough','How to Activate a Device',ActivateDevice);registerWorkflow('page:guided-walkthroughs/getDeviceLocation-walkthrough','How to Get Device Location',GetDeviceLocation);registerWorkflow('page:guided-walkthroughs/getDeviceUsage-walkthrough','How to Get Device Usage',GetDeviceUsage);registerWorkflow('page:guided-walkthroughs/day0/4G5GAddressValidation','How to do 4G/5G Address Validation',AddressValidation);registerWorkflow('page:guided-walkthroughs/day0/ActivateServiceForDevice','How to Activate Service For a Device',ActivateServiceForDevice);registerWorkflow('page:guided-walkthroughs/day0/RegisterDiagnosticServiceCallbackService','How to Register for DiagnosticService Callback Service',RegisterDiagnosticServiceCallbackService);registerWorkflow('page:guided-walkthroughs/day0/SIMSecureAssignment','How to do SIM Secure Assignment',SIMSecureAssignment);registerWorkflow('page:guided-walkthroughs/day1/GetRFStrengthBaseline','How to Get RF Strength Baseline',GetRFStrengthBaseline);registerWorkflow('page:guided-walkthroughs/day1/NetworkConditions','How to determine Network Conditions',NetworkConditions);registerWorkflow('page:guided-walkthroughs/day1/RegisterForOutages','How to Register For Outages',RegisterForOutages);registerWorkflow('page:guided-walkthroughs/day1/SiteProximity','How to do Site Proximity',SiteProximity);registerWorkflow('page:guided-walkthroughs/dayN/FotaUpgrade','How to do Fota Upgrade',FotaUpgrade);registerWorkflow('page:guided-walkthroughs/dayN/GetExperienceScore','How to Get Experience Score',GetExperienceScore);registerWorkflow('page:guided-walkthroughs/dayN/VerifyNetworkLocation','How to Verify Network Location',VerifyNetworkLocation);registerWorkflow('page:guided-walkthroughs/GetTokens','How to obtain tokens',GetTokens);});});</script>
+</body>
+
+</html>
