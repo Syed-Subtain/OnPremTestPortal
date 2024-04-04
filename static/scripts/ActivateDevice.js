@@ -43,22 +43,6 @@ This step registers a URL at which an account receives asynchronous responses an
         await portal.setConfig((defaultConfig) => {
           console.log(defaultConfig);
           return {
-            ...defaultConfig,
-            showFullCode:true,
-            environment: "Dev",
-            auth: {
-              ...defaultConfig.auth,
-              thingspace_oauth: {
-                ...defaultConfig.auth["thingspace_oauth"],
-                OAuthClientId: "df",
-                OAuthClientSecret: "f",
-                OAuthScopes: "discovery:read",
-              },
-              "VZ-M2M-Token": {
-                ...defaultConfig.auth["VZ-M2M-Token"],
-                "VZ-M2M-Token": "tester",
-              },
-            },
           };
         });
         return workflowCtx.showEndpoint({
@@ -120,7 +104,6 @@ Check the output of this to confirm if CarrierService callback is registered suc
       name: "Check Devices Availability for Activation",
       stepCallback: async (stepState) => {
         const step3State = stepState?.["Step 1"];
-        const accountName = step3State?.data?.accountName;
         await portal.setConfig((defaultConfig) => ({
           ...defaultConfig,
         }));
@@ -132,7 +115,7 @@ Check the output of this to confirm if CarrierService callback is registered suc
             "$e/Device%20Management/CheckDevicesAvailabilityForActivation",
           args: {
             body: {
-              accountName: accountName,
+              accountName: step3State?.data?.accountName,
             },
           },
           verify: (response, setError) => {

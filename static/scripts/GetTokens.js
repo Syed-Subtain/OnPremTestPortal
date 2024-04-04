@@ -36,10 +36,6 @@ async function GetTokens(workflowCtx, portal) {
                 ...defaultConfig.auth["thingspace_oauth"],
                 OAuthClientId:"d69cf016-2b4b-4349-882e-6c755bc0424f",
                 OAuthClientSecret:"f660a4c2-e63f-4756-af6b-803569ff4ba5"
-              },
-              "VZ-M2M-Token": {
-                ...defaultConfig.auth["VZ-M2M-Token"],
-                "VZ-M2M-Token": "tester",
               }
             }
           }
@@ -59,12 +55,6 @@ This endpoint initiates a Connectivity Management session and returns a VZ-M2M s
 `,
           endpointPermalink:
             "$e/Session%20Management/StartConnectivityManagementSession",
-            args:{
-              body:{
-                username:"TestAPIUser",
-                password:"Verizon*1"
-              }
-            },
           verify: (response, setError) => {
             if (response.StatusCode == 401 || response.StatusCode == 400) {
               setError("Authentication Token is Required");
